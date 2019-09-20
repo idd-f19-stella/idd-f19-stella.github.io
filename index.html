@@ -1,29 +1,35 @@
 <html>
 	<head>
-		<title>Interaction (Re)Design</title>
-		<link rel="stylesheet" href="css/index.css">
+        <title>Interaction (Re)Design</title>
+        <meta name="Interaction Design" content="George Brown">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	</head>
 	<body>
         <header>
             <div class="gnb">
-                <form class="searchbar">
-                    <input type="text">
-                    <input type="submit">
+                <form>
+                    <input type="text" name="search" placeholder="Search">
+                    <button type="button" class="serchbtn"><i class="material-icons">search</i></button>
                 </form>
             </div>
             <div class="logo">
                 <h1><a href="">George Brown Colleage</a></h1>
             </div>
                 <nav>
-                    <p>Academics</p>
+                    <div><p>Academics</p>
                     <ul>
                         <li>Overview</li>
                         <li>Degree Programs</li>
                         <li>Postgraduate Programs</li>
                         <li>Apprenticeship Programs</li>
                         <li>Second Career Programs</li>
-                    </ul>
-                    <p>Admissions</p>
+                    </ul></div>
+                    <div><p>Admissions</p>
                     <ul>
                         <li>How to Apply</li>
                         <li>Tuition + Fees</li>
@@ -32,16 +38,16 @@
                         <li>FAQ</li>
                         <li>Program Availability</li>
                         <li>Contact</li>
-                    </ul>
-                    <p>Faculty</p>
+                    </ul></div>
+                    <div><p>Faculty</p>
                     <ul>
                         <li>All Programs</li>
                         <li>Degree Programs</li>
                         <li>Postgraduate Programs</li>
                         <li></li>
                         <li></li>
-                    </ul>
-                    <p>Students</p>
+                    </ul></div>
+                    <div><p>Students</p>
                     <ul>
                         <li>Important Dates</li>
                         <li>Library</li>
@@ -56,8 +62,8 @@
                         <li>STU-view Login</li>
                         <li>Student Email</li>
                         <li></li>
-                    </ul>
-                    <p>About</p>
+                    </ul></div>
+                    <div><p>About</p>
                     <ul>
                         <li>Academic Affairs</li>
                         <li>Direction</li>
@@ -65,7 +71,7 @@
                         <li>History</li>
                         <li>Mission & Governance</li>
                         <li>Community</li>
-                    </ul>
+                    </ul></div>
                 </nav>
         </header>
         <main>
@@ -80,45 +86,55 @@
                     </section>
                 </div>
                 <div class="program-nav">
-                    <nav>
-                        <li><a href="#">Overview</a></li>
-                        <li><a href="#">Curriculum</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Student Work</a></li>
-                        <li><a href="#">Faculty</a></li>
-                        <li><a href="#">How to apply</a></li>
-                    </nav>
-                </div>
+                        <input type="radio" id="m1" name="menugroup" checked>
+                        <input type="radio" id="m2" name="menugroup">
+                        <input type="radio" id="m3" name="menugroup">
+                        <input type="radio" id="m4" name="menugroup">
+                        <input type="radio" id="m5" name="menugroup">
+                        <input type="radio" id="m6" name="menugroup">
+                    <ul class="clearfix">
+                        <li><label for="m1">Overview</label></li>
+                        <li><label for="m2">Curriculum</label></li>
+                        <li><label for="m3">Careers</label></li>
+                        <li><label for="m4">Student Work</label></li>
+                        <li><label for="m5">Faculty</label></li>
+                        <li><label for="m6">How to apply</label></li>
+                    </ul>
                 
-                <section class="innerbox">
-                    <div>
-                        <h3>overview</h3>
-                    </div>
-                    <div>
-                        <dl>
-                            <h4>PROGRAM NAME/SCHOOL</h4>
-                            <dd>Interaction Design and Development</dd>
+                
+                    <section class="innerbox">
+                        <div class="innerbox-cnt">
+                            <dl>
+                                <h4>PROGRAM NAME/SCHOOL</h4>
+                                <dd>Interaction Design and Development</dd>
 
-                            <h4>CODE</h4>
-                            <dd>G103</dd>
+                                <h4>CODE</h4>
+                                <dd>G103</dd>
 
-                            <h4>LOCATION</h4>
-                            <dd></dd>
+                                <h4>LOCATION</h4>
+                                <dd></dd>
 
-                            <h4>DURATION</h4>
-                            <dd>3 years plus optional 7th semester</dd>
-                        </dl>
-                        <dl>
-                            <h4>CREDENTIAL</h4>
-                            <dddt>Ontario College Advanced Diploma</dddt>
-                        </dl>
-                        <dl>
-                            <h4>METHOD OF STUDY</h4>
-                            <dd>FT</dd>
-                        </dl>
-                            
-                    </div>
-                </section>
+                                <h4>DURATION</h4>
+                                <dd>3 years plus optional 7th semester</dd>
+                            </dl>
+                            <dl>
+                                <h4>CREDENTIAL</h4>
+                                <dddt>Ontario College Advanced Diploma</dddt>
+                            </dl>
+                            <dl>
+                                <h4>METHOD OF STUDY</h4>
+                                <dd>FT</dd>
+                            </dl>
+                                
+                        </div>
+                        <div class="innerbox-cnt">About Curriculum</div>
+                        <div class="innerbox-cnt">About Careers</div>
+                        <div class="innerbox-cnt">About Student Work</div>
+                        <div class="innerbox-cnt">About Faculty</div>
+                        <div class="innerbox-cnt">About How to apply</div>
+                        
+                    </section>
+                </div>
                 <article>
                     <img src="" alt="">
                     <h5>PROGRAM STANDARDS AND LEARNING OUTCOMES</h5>

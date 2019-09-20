@@ -1,10 +1,39 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet')
 
-
-html{ font-size: 1em; --primary-a:#ffffff; }
+/*html{ font-size: 1em; --primary-a:#ffffff; }
 body{ background-color: lightgrey; font-weight: normal; font-style: normal; font-size: 1em; font-family: sans-serif;}
+body{background-color: var(--primary-a);}*/
 
-h1{border-bottom: 1px solid #000;}
+header .gnb{position: absolute; top: 10px; right: 10px;}
+header .gnb input{width: 100px; height: 20px;}
+header .gnb form i{font-size: 18px;}
 
-body{background-color: var(--primary-a);}
+header .logo{margin-top: 35px;}
+header .logo h1{text-indent: -9999px;}
+header .logo h1 a{display: block; background-image: url('/img/george-brown.png'); background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; height: 100px; margin: 50px 0 30px; background-color:#3269a8;}
 
+
+header nav div{float: left; display: block; cursor: pointer; width: 33%;}
+header nav ul{height: 0; overflow: hidden; background-color: #fff; transition: height 0.3s;}
+header nav div:hover ul{height: 100px;}
+header nav ul li
+
+.program-nav input{display: none;}
+.program-nav ul li {float: left; margin: 18px; border: 2px solid black; border-radius: 10px;}
+.program-nav ul li label {display: block; width: 100px; height: 20px; text-align: center; text-transform: uppercase; cursor: pointer;}
+.program-nav ul li label:hover {background-color: rgba(255,255,255,0.1);}
+.program-nav .innerbox .innerbox-cnt {display: none; color: black; font-size: 2em; text-align: center; border: 2px solid black; background-color: #fff;}
+
+.program-nav #m1:checked~ul li:nth-child(1) label,
+.program-nav #m2:checked~ul li:nth-child(2) label,
+.program-nav #m3:checked~ul li:nth-child(3) label,
+.program-nav #m4:checked~ul li:nth-child(4) label,
+.program-nav #m5:checked~ul li:nth-child(5) label,
+.program-nav #m6:checked~ul li:nth-child(6) label {background-color: rgba(255,255,255,0.25);}
+.program-nav #m1:checked~.innerbox .innerbox-cnt:nth-child(1),
+.program-nav #m2:checked~.innerbox .innerbox-cnt:nth-child(2),
+.program-nav #m3:checked~.innerbox .innerbox-cnt:nth-child(3),
+.program-nav #m4:checked~.innerbox .innerbox-cnt:nth-child(4),
+.program-nav #m5:checked~.innerbox .innerbox-cnt:nth-child(5),
+.program-nav #m6:checked~.innerbox .innerbox-cnt:nth-child(6) {display: block;}
