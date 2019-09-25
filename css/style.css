@@ -4,9 +4,10 @@ a{text-decoration: none; color: #000000;}
 input[type=text]{cursor: text;}
 button{border: none;}
 label, button, [type=button], [type=submit], [type=reset], a{cursor: pointer;}
-.inner {margin: auto; padding: 0 10px;}
+.inner {margin: auto; padding: 15px 10px;}
 .clearfix:after {content: ""; display: block; clear: both;}
 
 
-h2{font-size: 1.5em;}
+h2{font-size: 1.3em;}
+h3{font-size: 1.2em;}
 h4{font-size: 0.8em;}

@@ -3,27 +3,26 @@
 body{ background-color: lightgrey; font-weight: normal; font-style: normal; font-size: 1em; font-family: sans-serif;}
 body{background-color: var(--primary-a);}*/
 
-header .gnb{position: absolute; top: 10px; right: 10px;}
-header .gnb input{width: 100px; height: 20px;}
+header .gnb{position: absolute; top: 10px; right: 10px; top: 15px;}
+header .gnb input{width: 190px; height: 20px;}
 header .gnb form i{font-size: 18px;}
 
-header .logo{margin-top: 35px;}
 header .logo h1{text-indent: -9999px;}
 header .logo h1 a{display: block; background-image: url('/img/george-brown.png'); background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; height: 100px; margin: 50px 0 30px; background-color:#3269a8;}
+    background-size: cover; height: 100px; margin: 50px 0 30px; background-color:#0d5ba6;}
 
 header .wrap input{display: none;}
-header .wrap aside {position: fixed; top: 0; bottom: 0; left: -200px; width: 200px; background-color: #fff; transition: left 0.6s;}
-header .wrap aside .btn {position: absolute; top: 10px; right: -54px; width: 40px; height: 40px; border: 2px solid #fff; border-radius: 4px;}
+header .wrap aside {position: fixed; top: 0; bottom: 0; left: -200px; width: 180px; background-color: #fff; transition: left 0.6s;}
+header .wrap aside .btn {position: absolute; top: 10px; right: -70px; width: 40px; height: 40px; border: 2px solid #fff; border-radius: 4px;}
 header .wrap aside .btn i {position: absolute; left: 50%; margin: -1px 0 0 -16px; width: 32px; height: 2px; background-color: black;}
 header .wrap aside .btn i:nth-child(1) {top: 25%;}
 header .wrap aside .btn i:nth-child(2) {top: 50%;}
 header .wrap aside .btn i:nth-child(3) {top: 75%;}
 
-header .wrap aside .cate .tit {display: block; padding: 10px; color: #fff; font-size: 1.5em; text-align: center; background-color: navy;}
+header .wrap aside .cate .tit {display: block; padding: 7px; color: #fff; text-align: center; background-color: #0d5ba6;}
 header .wrap aside .cate ul {overflow: hidden; border-bottom: 2px solid tomato; transition: height 0.6s;}
-header .wrap aside .cate ul li {height: 30px; color: #333; text-indent: 10px; line-height: 32px;}
+header .wrap aside .cate ul li {height: 30px; color: #000000; text-indent: 10px; font-size: 0.8em; line-height: 32px;}
 header .wrap aside .cate ul li+li {border-top: 1px solid rgba(0,0,0,0.25);}
 
 #btn:checked~aside{left: 0; z-index: 1;}
@@ -37,31 +36,31 @@ aside input:not(:checked)~ul {height: 0 !important;}
 #menu1-1:checked~aside label[for=menu1-1],
 #menu1-2:checked~aside label[for=menu1-2],
 #menu1-3:checked~aside label[for=menu1-3],
-#menu1-3:checked~aside label[for=menu1-4],
-#menu1-3:checked~aside label[for=menu1-5],
+#menu1-4:checked~aside label[for=menu1-4],
+#menu1-5:checked~aside label[for=menu1-5],
 #menu2-1:checked~aside label[for=menu2-1],
 #menu2-2:checked~aside label[for=menu2-2],
 #menu2-3:checked~aside label[for=menu2-3],
 #menu2-4:checked~aside label[for=menu2-4],
 #menu2-5:checked~aside label[for=menu2-5],
-#menu2-5:checked~aside label[for=menu2-6],
-#menu2-5:checked~aside label[for=menu2-7],
+#menu2-6:checked~aside label[for=menu2-6],
+#menu2-7:checked~aside label[for=menu2-7],
 #menu3-1:checked~aside label[for=menu3-1],
 #menu3-2:checked~aside label[for=menu3-2],
-#menu3-2:checked~aside label[for=menu3-3],
-#menu3-2:checked~aside label[for=menu4-1],
-#menu3-2:checked~aside label[for=menu4-2],
-#menu3-2:checked~aside label[for=menu4-3],
-#menu3-2:checked~aside label[for=menu4-4],
-#menu3-2:checked~aside label[for=menu4-5],
-#menu3-2:checked~aside label[for=menu4-6],
-#menu3-2:checked~aside label[for=menu4-7],
-#menu3-2:checked~aside label[for=menu4-8],
-#menu3-2:checked~aside label[for=menu4-9],
-#menu3-2:checked~aside label[for=menu4-10],
-#menu3-2:checked~aside label[for=menu4-11],
-#menu3-2:checked~aside label[for=menu4-12]
-{color: tomato;}
+#menu3-3:checked~aside label[for=menu3-3],
+#menu4-1:checked~aside label[for=menu4-1],
+#menu4-2:checked~aside label[for=menu4-2],
+#menu4-3:checked~aside label[for=menu4-3],
+#menu4-4:checked~aside label[for=menu4-4],
+#menu4-5:checked~aside label[for=menu4-5],
+#menu4-6:checked~aside label[for=menu4-6],
+#menu4-7:checked~aside label[for=menu4-7],
+#menu4-8:checked~aside label[for=menu4-8],
+#menu4-9:checked~aside label[for=menu4-9],
+#menu4-10:checked~aside label[for=menu4-10],
+#menu4-11:checked~aside label[for=menu4-11],
+#menu4-12:checked~aside label[for=menu4-12]
+{font-weight: bold;}
 
 
 
@@ -74,11 +73,9 @@ header aside ul li*/
 
 
 
-
-main{padding: 15px;}
-main section div .program-right {position: absolute; width: 70%; top: 180px; right: 25px; text-align: right; background-color: #37a198;}
+main section div .program-right {position: absolute; width: 70%; top: 180px; right: 0; text-align: right; background-color: #37a198;}
 main section div .program-right h2{margin: 14px;}
-main section div .program-right p{margin: 10px;}
+main section div .program-right p{margin: 10px; font-size: 0.7em;}
 
 .program-nav input{display: none;}
 .program-nav .clearfix {display: none;}
@@ -105,31 +102,36 @@ main section div .program-right p{margin: 10px;}
 .program-nav #m5:checked~.innerbox .innerbox-cnt:nth-child(5),
 .program-nav #m6:checked~.innerbox .innerbox-cnt:nth-child(6) {display: block;}*/
 .innerbox .innerbox-cnt{padding: 10px;}
-.innerbox .innerbox-cnt span{font-size: 1.2em;;}
+.innerbox .innerbox-cnt span{font-size: 1.2em;}
 .innerbox .innerbox-cnt dl{display: grid; grid-template-columns: 1fr 1fr; align-items: center;}
 .innerbox .innerbox-cnt dl dd{font-size: 1em; padding: 5px;}
-.innerbox .innerbox-cnt ul{overflow: hidden;}
+.innerbox .innerbox-cnt ul{overflow: hidden; margin-top: 10px; padding-left: 10%;}
 .innerbox .innerbox-cnt ul li:nth-child(2n+1){float: left; width: 30%;}
 .innerbox .innerbox-cnt ul li{float: left; width: 70%;}
-.innerbox .innerbox-cnt a:hover{color: blue;}
-.innerbox .innerbox-cnt p{margin-top: 10px;}
-.innerbox .innerbox-cnt ol{margin-top: 10px; padding-left: 2em;;}
+.innerbox .innerbox-cnt ul li:nth-child(n+3){font-size: 0.8em;}
+.innerbox .innerbox-cnt a{float: right;}
+.innerbox .innerbox-cnt a:hover{color:#0d5ba6;}
+.innerbox .innerbox-cnt p{margin-top: 10px; padding-left: 0.8em; padding-bottom: 0.3em;}
+.innerbox .innerbox-cnt ol{margin-top: 10px; padding-left: 2em;}
+.innerbox .innerbox-cnt ol li{list-style-type: circle;}
+.innerbox .innerbox-cnt div{overflow: hidden; margin-top: 10px;}
+.innerbox .innerbox-cnt button{background-color: #0d5ba6; color: #ffffff; padding: 8px 12px; margin: 15px;}
 
 
 
-
-main .courseinfo{overflow: hidden;}
-main .courseinfo ul{float: left; width: 50%; text-align: center; margin-top: 10px;}
+main .courseinfo{overflow: hidden; padding-top: 25px;}
+main .courseinfo div{padding-top: 10px;}
+main .courseinfo ul{float: left; width: 50%; text-align: center; margin-top: 20px;}
 main .courseinfo div{float: left; height: 40px; width: 50%; text-align: center;}
 main .courseinfo ul li{text-align: center;}
 main .courseinfo ul li:nth-child(2n){color: red;}
 
-footer{padding: 15px;}
-footer ul{float:left; width:50%;}
+footer{overflow: hidden; padding: 15px; background-color: #adadad;}
+footer ul{float:left; width:50%; color: #ffffff;}
 footer ul:nth-child(n+3){margin-top: 20px;}
 footer ul li{margin-left: 15px;}
 footer ul li:first-child{margin-top: 10px;}
-footer ul li a:hover{color: blue;}
-footer p{position: relative; display: inline-block; text-align: center; margin-top: 20px;}
+footer ul li a:hover{color: #0d5ba6;}
+footer p{float:right; text-align: center; margin-top: 20px;}
 
 
