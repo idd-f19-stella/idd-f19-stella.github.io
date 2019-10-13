@@ -75,7 +75,7 @@ main section div .program-right p{margin: 10px; font-size: 0.7em;}
 .program-nav input{display: none;}
 .program-nav .clearfix {display: none;}
 
-.innerbox .innerbox-cnt{padding: 10px;}
+.innerbox .innerbox-cnt{padding: 30px 10px;}
 .innerbox .innerbox-cnt span{font-size: 1.2em;}
 .innerbox .innerbox-cnt dl{display: grid; grid-template-columns: 1fr 1fr; align-items: center;}
 .innerbox .innerbox-cnt dl dd{font-size: 1em; padding: 5px;}
@@ -143,7 +143,7 @@ footer p{float:right; text-align: center; margin-top: 20px;}
     .program-nav ul li {float: left; width: 16%;}
     .program-nav ul li label {display: block; height: 30px; text-align: center; text-transform: uppercase; cursor: pointer;}
     .program-nav .innerbox .innerbox-cnt {display: none; border: 2px solid var(--black); margin-top: 30px; background-color: #fff; overflow: scroll;}
-    .program-nav .innerbox .innerbox-cnt ul{float: left; width: 50%;}
+    
     .program-nav #m1:checked~ul li:nth-child(1) label,
     .program-nav #m2:checked~ul li:nth-child(2) label,
     .program-nav #m3:checked~ul li:nth-child(3) label,
@@ -157,5 +157,11 @@ footer p{float:right; text-align: center; margin-top: 20px;}
     .program-nav #m4:checked~.innerbox .innerbox-cnt:nth-child(4),
     .program-nav #m5:checked~.innerbox .innerbox-cnt:nth-child(5),
     .program-nav #m6:checked~.innerbox .innerbox-cnt:nth-child(6) {display: block;}
-
-}
+    .program-nav #m2:checked~.innerbox .innerbox-cnt:nth-child(2){display: grid; grid-template-columns: 110px auto 110px; grid-row-gap: 15px;}
+    .program-nav #m2:checked~.innerbox .innerbox-cnt:nth-child(2) span{grid-column-start: 1;
+        grid-column-end: four;}
+    .program-nav #m2:checked~.innerbox .innerbox-cnt:nth-child(2) p{font-size: 1em; padding-left: 0;}
+    .program-nav #m2:checked~.innerbox .innerbox-cnt:nth-child(2) ul li{font-size: 1em;}
+    .program-nav #m2:checked~.innerbox .innerbox-cnt:nth-child(2) div{grid-column-start: 1; grid-column-end: span four;}
+    
+    main .courseinfo div{height: 60px;}
